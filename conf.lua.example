@@ -1,0 +1,18 @@
+local conf = {}
+
+conf.wifi_ssid = "<ssid>"
+conf.wifi_pass = "<password>"
+
+conf.report_ip = "192.168.1.1" -- ip to report to
+conf.report_port = 4555 -- tcp port to connect to
+conf.report_host = "192.168.1.1" -- hostname to use in http request
+conf.report_url = "/esp?temp=%s&hum=%s" -- url to report to
+conf.report_tries = 3 -- number of retries in case of dht error
+conf.report_interval = 15000 -- ms
+conf.report_autostart = true -- run reporter on boot
+
+conf.esp_pin = 4 -- pin on esp
+conf.esp_baud = 9600 -- change to this baudrate on boot (I recommend keeping this 9600)
+
+return conf
+
